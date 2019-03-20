@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="719.112" height="403.735" viewBox="0 0 719.112 403.735">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #1e2833;
+      }
+
+      .cls-2, .cls-3 {
+        fill: #fff;
+      }
+
+      .cls-2 {
+        font-size: 38px;
+        font-family: MajorMonoDisplay-Regular, Major Mono Display;
+      }
+
+      .cls-3 {
+        font-size: 30px;
+        font-family: Thasadith-Regular, Thasadith;
+      }
+    </style>
+  </defs>
+  <g id="Group_23" data-name="Group 23" transform="translate(-178.338 -1370.763)">
+    <path id="Path_304" data-name="Path 304" class="cls-1" d="M892.64,461.584c-14.229,62.5-27.526,40.783-66.192,81.393-64.443,68.06-119.232,16.161-207.906-8.341C547.6,515.125,425.916,561.1,391.89,493.95s-127.8-113.7-108.832-197.526,83.415-102.658,202.3-108.443c54.029-2.609,133.526-27,204.569-7.487,85.581,23.594,269.63,50.478,306.338,106.855C1020.5,324.669,907.694,395.452,892.64,461.584Z" transform="translate(-102.213 1197.774)"/>
+    <text id="Did_you_know_" data-name="Did you know? " class="cls-2" transform="translate(331 1498)"><tspan x="0" y="0">Did you know? </tspan></text>
+    <text id="The_calves_are_sent_for_slaughter_when_they_are_under_10_months_old._Cattle_are_slaughtered_at_an_age_between_10_-_24_months." data-name="The calves are sent for slaughter when they are under 10 months old. Cattle are slaughtered at an age between 10 - 24 months." class="cls-3" transform="translate(242 1536)"><tspan x="10.085" y="30">The calves are sent for slaughter when they are </tspan><tspan x="12.68" y="72">under 10 months old. Cattle are slaughtered at </tspan><tspan x="94.61" y="114">an age between 10 - 24 months.</tspan></text>
+  </g>
+</svg>
