@@ -1,8 +1,8 @@
 @import url('https://fonts.googleapis.com/css?family=Major+Mono+Display|Thasadith:400,700');
 
 :root {
-    --title-color: #DD534A;
-    --section-color: #1E2833;
+    --red-col: #DD534A;
+    --dark-col: #1E2833;
     --title-font: 'Major Mono Display', monospace;
     --text-font: 'Thasadith', sans-serif;
     background-color: #f3f3f3;
@@ -21,39 +21,26 @@ body {
 h1 {
     font-family: var(--title-font);
     text-align: center;
-    color: var(--title-color);
-    /* font-size: 2rem; */
-    font-size: 10vmin;
+    color: var(--dark-col);
+    font-size: 4rem;
+    font-weight: 100;
 }
 
 h2 {
     font-family: var(--title-font);
-    color: var(--section-color);
-    font-size: 10vmin;
+    color: var(--dark-col);
+    font-size: 2.2rem;
+    font-weight: 100;
 }
 
 h3 {
     font-family: var(--title-font);
-    color: white;
-    font-size: 5vmin;
+    font-size: 1.7rem;
 }
 
 p {
     font-family: var(--text-font);
 }
-
-/* CALC TEST FLUID TYPOGRAPHY */
-/* @media screen and (min-width: 20rem) {
-    h1 {
-        font-size: calc(2rem + 2 * ((100vw - 20rem) / 60));
-    }
-}
-
-@media screen and (min-width: 80rem) {
-    h1 {
-        font-size: 4rem;
-    }
-} */
 
 @media screen and (max-width: 319px) {
     :root {
@@ -66,7 +53,8 @@ p {
     grid-template-columns: repeat(8, 1fr);
     grid-template-rows: auto;
     grid-template-areas: "c c c c t t t t";
-    margin: 7rem 9rem;
+    margin: 7rem 8rem;
+    column-gap: 2rem;
 }
 
 #carl {
@@ -91,4 +79,12 @@ p {
     height: 20vmax;
     justify-items: center;
     align-items: center;
+}
+
+span {
+    color: var(--red-col);
+}
+
+.paddingtop {
+    padding-top: 2rem;
 }
