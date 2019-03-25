@@ -36,6 +36,7 @@ h2 {
 h3 {
     font-family: var(--title-font);
     font-size: 1.7rem;
+    font-weight: 100;
 }
 
 p {
@@ -76,9 +77,6 @@ p {
 #introgrid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    height: 20vmax;
-    justify-items: center;
-    align-items: center;
 }
 
 span {
@@ -87,4 +85,32 @@ span {
 
 .paddingtop {
     padding-top: 2rem;
+}
+
+#introleft {
+    background-color: var(--red-col);
+}
+
+.introtext {
+    padding: 3rem 4rem;
+    color: white;
+    font-size: 1.9rem;
+}
+
+#introright {
+    background-color: var(--dark-col);
+    color: var(--red-col);
+    text-align: center;
+    padding: 5rem;
+}
+
+#petition {
+    background-color: var(--red-col);
+    border: 0;
+    color: white;
+    font-family: var(--title-font);
+    font-size: 1.5rem;
+    border-radius: 2rem;
+    padding: 1rem;
+    margin: 2rem;
 }
