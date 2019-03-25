@@ -14,7 +14,7 @@ body {
 
 #logo {
     margin: 2rem;
-    height: 2.5rem;
+    height: 7vmin;
 
 }
 
@@ -22,20 +22,20 @@ h1 {
     font-family: var(--title-font);
     text-align: center;
     color: var(--dark-col);
-    font-size: 4rem;
+    font-size: 8vmin;
     font-weight: 100;
 }
 
 h2 {
     font-family: var(--title-font);
     color: var(--dark-col);
-    font-size: 2.2rem;
+    font-size: 4.5vmin;
     font-weight: 100;
 }
 
 h3 {
     font-family: var(--title-font);
-    font-size: 1.7rem;
+    font-size: 3.3vmin;
     font-weight: 100;
 }
 
@@ -54,8 +54,11 @@ p {
     grid-template-columns: repeat(8, 1fr);
     grid-template-rows: auto;
     grid-template-areas: "c c c c t t t t";
-    margin: 7rem 8rem;
+    margin: 5rem 8rem;
     column-gap: 2rem;
+    align-items: center;
+    justify-items: center;
+    height: 75vmin;
 }
 
 #carl {
