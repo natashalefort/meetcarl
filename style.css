@@ -1,49 +1,53 @@
 @import url('https://fonts.googleapis.com/css?family=Major+Mono+Display|Thasadith:400,700');
 
 :root {
-    --red-col: #DD534A;
-    --dark-col: #1E2833;
-    --title-font: 'Major Mono Display', monospace;
-    --text-font: 'Thasadith', sans-serif;
+    --color-red: #DD534A;
+    --color-black: #1E2833;
+    --font-title: 'Major Mono Display', monospace;
+    --font-text: 'Thasadith', sans-serif;
     background-color: #f3f3f3;
+    box-sizing: border-box;
+    font-size: 62.5%; /* redefining rem to equal 10px instead of 16px */
 }
 
 body {
     margin: 0 auto;
+    font-size: 1.6rem; /* and giving that proper sizing back */
 }
 
 #logo {
-    margin: 2rem;
-    height: 7vmin;
+    margin: 1rem 0 0 1rem;
+    height: 6vh;
 
 }
+
+
+/* GLOBAL TEXT STYLING BEGIN */
 
 h1,
 h2,
 h3,
 h4,
 h5 {
-    font-family: var(--title-font);
+    font-family: var(--font-title);
+    color: var(--color-black);
     font-weight: 100;
 }
 
 h1 {
-    text-align: center;
-    color: var(--dark-col);
-    font-size: 8vmin;
+    font-size: 10vh;
 }
 
 h2 {
-    color: var(--dark-col);
-    font-size: 4.5vmin;
+    font-size: 5vh;
 }
 
 h3 {
-    font-size: 3.3vmin;
+    font-size: 3vh;
 }
 
 h4 {
-    font-size: 6vmin;
+    font-size: 6vh;
     color: white;
 }
 
@@ -53,48 +57,67 @@ h5 {
 }
 
 p {
-    font-family: var(--text-font);
+    font-family: var(--font-text);
+    color: var(--color-black);
+}
+
+span {
+    color: var(--color-red);
 }
 
 a {
     text-decoration: none;
 }
 
-#headergrid {
+/* GLOBAL TEXT STYLING END */
+
+
+/* HEADER GRID BEGIN */
+.h-grid {
     display: grid;
-    grid-template-columns: repeat(8, 1fr);
-    grid-template-rows: auto;
-    grid-template-areas: "c c c c t t t t";
+    grid-template-columns: 1fr 1fr;
+    height: 60vmin;
     margin: 5rem 8rem;
     column-gap: 2rem;
-    align-items: center;
-    justify-items: center;
-    height: 75vmin;
 }
 
-#carl {
-    grid-area: c;
+.h-griditem {
+    position: relative;
 }
 
-#carltext {
-    grid-area: t;
+.h-griditem img {
+    max-width: 100%;
+    max-height: 100%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+.valign {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: 15vmin 0;
+    /* must be 1/4 height of h-grid to center properly */
+}
+
+h1,
+h2,
+h3 {
     text-align: center;
-    align-self: center;
-    justify-self: center;
 }
 
-.imgtofit {
-    height: 100%;
-    width: 100%;
-}
+/* HEADER GRID END */
+
 
 #introgrid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-}
-
-span {
-    color: var(--red-col);
 }
 
 .paddingtop {
@@ -102,7 +125,7 @@ span {
 }
 
 #introleft {
-    background-color: var(--red-col);
+    background-color: var(--color-red);
 }
 
 .introtext {
@@ -112,17 +135,17 @@ span {
 }
 
 #introright {
-    background-color: var(--dark-col);
+    background-color: var(--color-black);
     color: var(--red-col);
     text-align: center;
     padding: 5rem;
 }
 
 #petition {
-    background-color: var(--red-col);
+    background-color: var(--color-red);
     border: 0;
     color: white;
-    font-family: var(--title-font);
+    font-family: var(--font-title);
     font-size: 1.5rem;
     border-radius: 2rem;
     padding: 1rem;
@@ -130,7 +153,7 @@ span {
 }
 
 footer {
-    background-color: var(--dark-col);
+    background-color: var(--color-black);
     height: 70vh;
 }
 
@@ -161,20 +184,20 @@ select {
     border: 1px solid #ccc;
     border-radius: 7px;
     box-sizing: border-box;
-    font-family: var(--text-font);
+    font-family: var(--font-text);
     font-size: 1.5rem;
 }
 
 input[type=submit] {
     width: 30%;
-    background-color: var(--red-col);
+    background-color: var(--color-red);
     color: white;
     padding: 14px 20px;
     margin: 1em 35%;
     border: none;
     border-radius: 7px;
     cursor: pointer;
-    font-family: var(--text-font);
+    font-family: var(--font-text);
     font-size: 1.5rem;
 }
 
@@ -184,7 +207,7 @@ input[type=submit]:hover {
 
 .footer-link {
     color: white;
-    font-family: var(--title-font);
+    font-family: var(--font-title);
     text-align: center;
     font-size: 1.3rem;
     margin-top: 2.5rem;
