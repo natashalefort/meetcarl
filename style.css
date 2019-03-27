@@ -168,11 +168,10 @@ header h3 {
 #m-grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(10, 80vh);
+    grid-template-rows: repeat(10, 100vh);
     gap: 4vmin;
     position: relative;
-    margin: 2vmin;
-    border: 2px solid red;
+    margin: 10rem;
     grid-template-areas:
         "a a b b"
         "c c c c"
@@ -196,6 +195,11 @@ header h3 {
 #m-grid section {
     display: block;
     margin: auto;
+}
+
+#m-grid section p {
+    font-size: 1.9rem;
+    font-weight: bold;
 }
 
 #m-a {
