@@ -111,9 +111,9 @@ a {
     /* must be 1/4 height of h-grid to center properly */
 }
 
-h1,
-h2,
-h3 {
+header h1,
+header h2,
+header h3 {
     text-align: center;
 }
 
@@ -131,19 +131,23 @@ h3 {
 
 #introleft {
     background-color: var(--color-red);
+    padding: 5rem 6rem;
 }
 
-.introtext {
-    padding: 3rem 4rem;
+#introleft p {
     color: white;
-    font-size: 1.9rem;
+    font-size: 2.5rem;
 }
 
 #introright {
     background-color: var(--color-black);
-    color: var(--red-col);
     text-align: center;
     padding: 5rem;
+}
+
+#introright h3 {
+    color: white;
+
 }
 
 #petition {
