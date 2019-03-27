@@ -7,12 +7,14 @@
     --font-text: 'Thasadith', sans-serif;
     background-color: #f3f3f3;
     box-sizing: border-box;
-    font-size: 62.5%; /* redefining rem to equal 10px instead of 16px */
+    font-size: 62.5%;
+    /* redefining rem to equal 10px instead of 16px */
 }
 
 body {
     margin: 0 auto;
-    font-size: 1.6rem; /* and giving that proper sizing back */
+    font-size: 1.6rem;
+    /* and giving that proper sizing back */
 }
 
 #logo {
@@ -71,21 +73,9 @@ a {
 
 /* GLOBAL TEXT STYLING END */
 
+/* TWEAKS BEGIN */
 
-/* HEADER GRID BEGIN */
-.h-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    height: 60vmin;
-    margin: 5rem 8rem;
-    column-gap: 2rem;
-}
-
-.h-griditem {
-    position: relative;
-}
-
-.h-griditem img {
+.valign-img {
     max-width: 100%;
     max-height: 100%;
     position: absolute;
@@ -96,13 +86,28 @@ a {
     margin: auto;
 }
 
+/* TWEAKS END */
+
+/* HEADER GRID BEGIN */
+.h-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 80vmin;
+    margin: 5rem 8rem;
+    column-gap: 2rem;
+}
+
+.h-griditem {
+    position: relative;
+}
+
 .valign {
     position: absolute;
     top: 0;
     bottom: 0;
     left: 0;
     right: 0;
-    margin: 15vmin 0;
+    margin: 20vmin 0;
     /* must be 1/4 height of h-grid to center properly */
 }
 
@@ -114,7 +119,7 @@ h3 {
 
 /* HEADER GRID END */
 
-
+/* INTRO GRID BEGIN */
 #introgrid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -152,6 +157,113 @@ h3 {
     margin: 2rem;
 }
 
+/* INTRO GRID END */
+
+/* MIN GRID BEGIN */
+
+#m-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(10, 80vh);
+    gap: 4vmin;
+    position: relative;
+    margin: 2vmin;
+    border: 2px solid red;
+    grid-template-areas:
+        "a a b b"
+        "c c c c"
+        "d d e e"
+        "f g g h"
+        "i i j j"
+        "k k l l"
+        "m m n n"
+        "o o o o"
+        "p p p p"
+        "q q q q";
+}
+
+#m-grid img {
+    align-self: stretch;
+    justify-self: stretch;
+}
+
+#m-grid img .center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#m-a {
+    grid-area: a;
+}
+
+#m-b {
+    grid-area: b;
+}
+
+#m-c {
+    grid-area: c;
+}
+
+#m-d {
+    grid-area: d;
+}
+
+#m-e {
+    grid-area: e;
+}
+
+#m-f {
+    grid-area: f;
+}
+
+#m-g {
+    grid-area: g;
+}
+
+#m-h {
+    grid-area: h;
+}
+
+#m-i {
+    grid-area: i;
+}
+
+#m-j {
+    grid-area: j;
+}
+
+#m-k {
+    grid-area: k;
+}
+
+#m-l {
+    grid-area: l;
+}
+
+#m-m {
+    grid-area: m;
+}
+
+#m-n {
+    grid-area: n;
+}
+
+#m-o {
+    grid-area: o;
+}
+
+#m-p {
+    grid-area: p;
+}
+
+#m-q {
+    grid-area: q;
+}
+
+/* MAIN GRID END */
+
+/* FOOTER BEGIN */
 footer {
     background-color: var(--color-black);
     height: 70vh;
@@ -228,6 +340,8 @@ input[type=submit]:hover {
     padding-left: 20px;
     padding-right: 20px;
 }
+
+/* FOOTER END */
 
 @media screen and (max-width: 319px) {
     :root {
