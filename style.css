@@ -202,11 +202,15 @@ aside {
     padding-top: 10%;
 }
 
-#m-grid aside img.patch {
-    max-height: 75%;
-    max-width: 75%;
+#m-grid img.patch {
+    max-height: 80%;
+    max-width: 80%;
     display: block;
     margin: auto;
+}
+
+#m-grid img.paddingbot {
+    padding-bottom: 4rem;
 }
 
 aside p,
@@ -224,6 +228,7 @@ aside h3 {
 
 #m-c {
     grid-area: c;
+    text-align: center;
 }
 
 #m-d {
@@ -232,26 +237,38 @@ aside h3 {
 
 #m-e {
     grid-area: e;
+    text-align: right;
 }
 
 #m-f {
     grid-area: f;
+    margin-top: 60%;
 }
 
 #m-g {
     grid-area: g;
+    text-align: center;
+    display: block;
+    margin: auto;
 }
 
 #m-h {
     grid-area: h;
+    margin-bottom: 60%
 }
 
 #m-i {
     grid-area: i;
 }
 
+img#m-i.patch {
+    max-width: 50%;
+    max-width: 50%;
+}
+
 #m-j {
     grid-area: j;
+    text-align: right;
 }
 
 #m-k {
