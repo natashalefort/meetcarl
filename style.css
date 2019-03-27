@@ -206,7 +206,7 @@ header h1{
 /* INTRO GRID END */
 
 /* MAIN GRID BEGIN */
-/*
+
 #m-grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -314,6 +314,8 @@ img#m-i.patch {
 
 #m-k {
     grid-area: k;
+    display: block;
+    margin: auto;
 }
 
 #m-l {
@@ -326,6 +328,9 @@ img#m-i.patch {
 
 #m-n {
     grid-area: n;
+    text-align: right;
+    display: block;
+    margin: auto;
 }
 
 #m-o {
@@ -339,7 +344,7 @@ img#m-i.patch {
 #m-q {
     grid-area: q;
 }
-*/
+
 /* MAIN GRID END */
 
 /* FOOTER BEGIN */
