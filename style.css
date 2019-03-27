@@ -187,8 +187,10 @@ header h3 {
 }
 
 #m-grid img {
-    align-self: stretch;
-    justify-self: stretch;
+    /* align-self: stretch; */
+    /* justify-self: stretch; */
+    max-height: 100%;
+    max-width: 100%;
 }
 
 #m-grid img .center {
