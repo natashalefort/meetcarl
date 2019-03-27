@@ -17,15 +17,18 @@
         </div>
 
         <div class="h-grid">
-            <div class="h-griditem">
+            <div class="h-griditem-1">
                 <img class="valign-img" src="/img/carl_head.gif" alt="Carl the Cow" />
             </div>
-            <div class="h-griditem">
+            <div class="h-griditem-2">
                 <div class="valign">
                     <h1>meet <span>Carl</span></h1>
                     <h3>Scroll down To</h3>
                     <h2>follow <span>Carl's</span> journey on his final day</h2>
                 </div>
+            </div>
+            <div class="h-griditem-3">
+                <img src="img/line_1.svg" alt="dotted line">
             </div>
         </div>
     </header>
@@ -39,11 +42,11 @@
                     transportation is rising concern as the welfare of the cattle is most of the time overlooked. </p>
             </div>
             <div id="introright">
-                <h3>click here to support the cause and help Carl the Cow</h3>
-                <button id="petition" type="button">sign petition</button>
+               <img src="img/hooves.gif" alt="cow hooves" id="hooves">
+                <h3>support <span>Carl</span> &amp; his friends by signing the petition below to raise awareness on the issue in denmark</h3>
+                <input id="petition" type="button" value="sign petition" onClick="document.getElementById('footer').scrollIntoView();">
             </div>
         </section>
-
         <div id="m-grid">
             <section id="m-a">
                 <h1>Enclosed</h1>
@@ -118,7 +121,7 @@
     </main>
 
 
-    <footer>
+    <footer id="footer">
         <h4 class="footer-header">help <span>Carl</span> &amp; his friends</h4>
         <h5 class="footer-subheader">sign the petition to ensure a better life for transported cattle</h5>
         <div class="petition-form">
