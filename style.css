@@ -149,6 +149,7 @@ header h1{
 #introgrid {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    position: relative;
 }
 
 .paddingtop {
@@ -173,10 +174,10 @@ header h1{
 }
 
 #hooves{
-    position: relative;
-    width: 30px;
-    top: 0;
-    left: 0;
+    width: 130px;
+    position: absolute;
+    bottom: 20px;
+    left: 86%;
 }
 
 #introright h3 {
@@ -206,7 +207,7 @@ header h1{
 /* INTRO GRID END */
 
 /* MAIN GRID BEGIN */
-/*
+
 #m-grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -322,7 +323,6 @@ aside h3 {
 #m-q {
     grid-area: q;
 }
-*/
 /* MAIN GRID END */
 
 /* FOOTER BEGIN */
