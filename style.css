@@ -202,7 +202,7 @@ aside {
     padding-top: 10%;
 }
 
-.patch {
+#m-grid aside img.patch {
     max-height: 75%;
     max-width: 75%;
     display: block;
