@@ -208,10 +208,14 @@ header h1{
 
 /* MAIN GRID BEGIN */
 
+main h1 {
+    font-size: 6rem;
+}
+
 #m-grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(10, 100vh);
+    grid-template-rows: repeat(8, 100vh);
     gap: 4vmin;
     position: relative;
     margin: 10rem;
@@ -336,15 +340,12 @@ img#m-i.patch {
 
 #m-o {
     grid-area: o;
+    text-align: center;
+    /* display: block; */
+    /* margin: auto; */
+    /* padding: 10%; */
 }
 
-#m-p {
-    grid-area: p;
-}
-
-#m-q {
-    grid-area: q;
-}
 /* MAIN GRID END */
 
 /* FOOTER BEGIN */
