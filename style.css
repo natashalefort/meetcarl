@@ -210,11 +210,10 @@ header h1{
 #m-grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(10, 80vh);
+    grid-template-rows: repeat(10, 100vh);
     gap: 4vmin;
     position: relative;
-    margin: 2vmin;
-    border: 2px solid red;
+    margin: 10rem;
     grid-template-areas:
         "a a b b"
         "c c c c"
@@ -229,14 +228,31 @@ header h1{
 }
 
 #m-grid img {
-    align-self: stretch;
-    justify-self: stretch;
+    align-self: center;
+    justify-self: center;
+    max-height: 100%;
+    max-width: 100%;
 }
 
-#m-grid img .center {
+#m-grid section p {
+    font-size: 3vmin;
+    font-weight: bold;
+}
+
+aside {
+    padding-top: 10%;
+}
+
+#m-grid aside img.patch {
+    max-height: 75%;
+    max-width: 75%;
     display: block;
-    margin-left: auto;
-    margin-right: auto;
+    margin: auto;
+}
+
+aside p,
+aside h3 {
+    color: white;
 }
 
 #m-a {
