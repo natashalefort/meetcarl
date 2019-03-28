@@ -12,8 +12,8 @@
 }
 
 html {
-  scroll-behavior: smooth;
- }
+    scroll-behavior: smooth;
+}
 
 body {
     margin: 0 auto;
@@ -106,22 +106,28 @@ a {
         "c c"
 }
 
-.h-griditem-1, .h-griditem-2, .h-griditem-3 {
+.h-griditem-1,
+.h-griditem-2,
+.h-griditem-3 {
     position: relative;
 }
 
-.h-griditem-1{
+.h-griditem-1 {
     grid-area: a;
 }
 
-.h-griditem-2{
+.h-griditem-2 {
     grid-area: b;
 }
 
-.h-griditem-3{
+.h-griditem-3 {
     grid-area: c;
     display: block;
     margin: 0 auto;
+}
+
+.h-griditem-3 img {
+    width: 50vw;
 }
 
 .valign {
@@ -139,7 +145,7 @@ header h3 {
     text-align: center;
 }
 
-header h1{
+header h1 {
     margin-bottom: 120px;
 }
 
@@ -173,7 +179,7 @@ header h1{
     padding: 5rem;
 }
 
-#hooves{
+#hooves {
     width: 130px;
     position: absolute;
     bottom: 20px;
@@ -187,7 +193,6 @@ header h1{
 
 #petition {
     background-color: var(--color-red);
-    border: 0;
     color: white;
     font-family: var(--font-title);
     font-size: 2.5rem;
@@ -198,7 +203,7 @@ header h1{
     transition: 0.5s;
 }
 
-#petition:hover{
+#petition:hover {
     cursor: pointer;
     background-color: var(--color-black);
     border: 3px dashed var(--color-red);
@@ -345,16 +350,13 @@ img#m-i.patch {
 #m-q {
     grid-area: q;
 }
-<<<<<<< HEAD
-=======
 
->>>>>>> origin/master
 /* MAIN GRID END */
 
 /* FOOTER BEGIN */
 footer {
     background-color: var(--color-black);
-    height: 60vh;
+    height: auto;
 }
 
 .footer-header {
@@ -385,7 +387,7 @@ select {
     border-radius: 7px;
     box-sizing: border-box;
     font-family: var(--font-text);
-    font-size: 1.5rem;
+    font-size: 2.5rem;
 }
 
 input[type=submit] {
@@ -398,7 +400,7 @@ input[type=submit] {
     border-radius: 7px;
     cursor: pointer;
     font-family: var(--font-text);
-    font-size: 1.5rem;
+    font-size: 2.5rem;
     border: 3px solid var(--color-red);
     transition: 0.5s;
 }
@@ -412,12 +414,13 @@ input[type=submit]:hover {
     color: white;
     font-family: var(--font-title);
     text-align: center;
-    font-size: 1.3rem;
+    font-size: 2rem;
     margin-top: 2.5rem;
+    margin-bottom: 2rem;
 }
 
 .footer-sm {
-    margin-top: .5rem;
+    padding-bottom: 2rem;
     height: 50px;
     width: 100vw;
     display: flex;
@@ -427,23 +430,165 @@ input[type=submit]:hover {
 
 .footer-sm img {
     width: auto;
-    height: 30px;
-    padding-left: 20px;
-    padding-right: 20px;
+    height: 40px;
+    padding-left: 30px;
+    padding-right: 30px;
 }
 
 /* FOOTER END */
 
-@media only screen and (max-width: 600px) {
-  body {
-    background-color: lightblue;
-  }
+@media only screen and (max-width: 1100px) {
+
+    /* 1100vw Header start */
+
+    .h-grid {
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: 1fr 1fr;
+        height: calc(100vh - (4.5vh + 2rem));
+        margin: 0 8rem;
+        column-gap: 2rem;
+        grid-template-areas:
+            "a"
+            "b";
+    }
+
+    .valign {
+        margin: 10rem 0 0 0;
+    }
+
+    .valign-img {
+        max-width: 100%;
+        max-height: 100%;
+        margin: 10rem auto auto auto;
+    }
+
+    .h-griditem-3 {
+        display: none;
+    }
+
+
+    /* 1100vw Header end */
+    /* 1100vw Intro start */
+
+    #hooves {
+        display: none;
+    }
+
+    #introgrid {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto 1fr;
+        position: relative;
+    }
+
+    #introleft p {
+        font-size: 3.3rem;
+        line-height: 6rem;
+        text-align: center;
+    }
+
+
+    /* 1100vw Intro end */
+
+    /* 1100vw Footer start */
+
+    .footer-header {
+        font-size: 5rem;
+    }
+
+    .footer-subheader {
+        width: 80%;
+        font-size: 3rem;
+    }
+
+    .petition-form {
+        margin: 2rem auto;
+        width: 50%;
+    }
+
+    input[type=text],
+    select {
+        padding: 10px 20px;
+    }
+
+    input[type=submit] {
+        width: 50%;
+        margin: 1em 25%;
+    }
+
+
+    /* 1100vw Footer end */
 }
 
-@media only screen and (max-width: 600px) {
-  body {
-    background-color: lightblue;
-  }
+@media only screen and (max-width: 800px) {
+
+    /* 800vw Header start */
+
+    header h1 {
+        margin-bottom: 80px;
+        font-size: 6rem;
+    }
+
+    header h2 {
+        font-size: 3rem;
+    }
+
+    header h3 {
+        font-size: 2rem;
+    }
+
+    /* 800vw Header end */
+    /* 800vw Intro start */
+
+    #introleft p {
+        font-size: 2.5rem;
+        line-height: 4rem;
+        text-align: center;
+    }
+
+    #introright h3 {
+        font-size: 2.5rem;
+        line-height: 4rem;
+        text-align: center;
+    }
+
+    #petition {
+        font-size: 2rem;
+        padding: 2rem 1rem;
+        margin: 1rem;
+    }
+
+    /* 800vw Intro end */
+    /* 800vw Footer start */
+
+    .footer-header {
+        font-size: 3.5rem;
+    }
+
+    .footer-subheader {
+        width: 80%;
+        font-size: 2.3rem;
+    }
+
+    .petition-form {
+        margin: 2rem auto;
+        width: 70%;
+    }
+
+    input[type=text],
+    select {
+        padding: 10px 20px;
+    }
+
+    input[type=submit] {
+        width: 40%;
+        margin: 1em 30%;
+    }
+
+
+    /* 800vw Footer end */
+
 }
 
 @media screen and (max-width: 319px) {
