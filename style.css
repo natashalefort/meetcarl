@@ -24,7 +24,6 @@ body {
 #logo {
     margin: 2rem 0 0 2rem;
     height: 4.5vh;
-
 }
 
 
@@ -127,7 +126,7 @@ a {
 }
 
 .h-griditem-3 img {
-    width: 50vw;
+    max-width: 50vw;
 }
 
 .valign {
@@ -351,8 +350,7 @@ img#m-i.patch {
     /* padding: 10%; */
 }
 
-<<<<<<< HEAD
-#m-p {
+<<<<<<< HEAD #m-p {
     grid-area: p;
 }
 
@@ -456,7 +454,6 @@ input[type=submit]:hover {
         grid-template-rows: 1fr 1fr;
         height: calc(100vh - (4.5vh + 2rem));
         margin: 0 8rem;
-        column-gap: 2rem;
         grid-template-areas:
             "a"
             "b";
@@ -597,6 +594,121 @@ input[type=submit]:hover {
 
 
     /* 800vw Footer end */
+
+}
+
+@media only screen and (max-width: 600px) {
+    /* 600vw Header start */
+
+    #logo {
+        margin: 1rem 0 0 1rem;
+        height: 3.5vh;
+    }
+
+    .h-grid {
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: 1fr 1fr;
+        height: calc(100vh - (3.5vh + 1rem));
+        margin: 0 2rem;
+    }
+
+    .valign {
+        margin: 5rem 0 0 0;
+    }
+
+    header h1 {
+        margin-bottom: 9rem;
+        font-size: 4rem;
+    }
+
+    header h2 {
+        font-size: 2rem;
+        line-height: 3.5rem;
+    }
+
+    header h3 {
+        font-size: 1.5rem;
+    }
+
+    /* 600vw Header end */
+
+    /* 600vw Intro start */
+
+    #introleft {
+    padding: 2rem;
+}
+
+    #introleft p {
+        font-size: 1.5rem;
+        line-height: 3rem;
+        text-align: center;
+    }
+
+    #introright {
+    padding: 2rem;
+}
+
+    #introright h3 {
+        font-size: 1.5rem;
+        line-height: 2.5rem;
+    }
+
+    #petition {
+        font-size: 1.3rem;
+        padding: 1rem 1rem;
+        margin: 1rem;
+    }
+
+    /* 600vw Intro end */
+
+    /* 600vw Footer start */
+
+    .footer-header {
+        font-size: 2.3rem;
+    }
+
+    .footer-subheader {
+        width: 80%;
+        font-size: 1.5rem;
+        line-height: 2.5rem;
+    }
+
+    .petition-form {
+        margin: 2rem auto;
+        width: 70%;
+    }
+
+    input[type=text],
+    select {
+        padding: 10px 20px;
+        font-size: 1.5rem;
+    }
+
+    input[type=submit] {
+        width: 40%;
+        margin: 1em 30%;
+        font-size: 1.5rem;
+        padding: 10px 20px;
+    }
+
+    .footer-link {
+        font-size: 1.5rem;
+        line-height: 2.5rem;
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .footer-sm img {
+    width: auto;
+    height: 30px;
+        margin-top: 20px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+    /* 600vw Footer end */
+
 
 }
 
