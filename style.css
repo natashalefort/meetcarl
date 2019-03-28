@@ -813,6 +813,10 @@ input[type=submit]:hover {
         height: 100vh;
     }
 
+    #m-c p{
+        padding: 0 10%;
+    }
+
     #m-d {
         grid-area: d;
     }
@@ -861,6 +865,7 @@ input[type=submit]:hover {
 
     #m-l {
         grid-area: l;
+        height: 65vh;
     }
 
     #m-m {
