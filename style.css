@@ -49,7 +49,7 @@ h2 {
 }
 
 h3 {
-    font-size: 3rem;
+    font-size: 2.5rem;
 }
 
 h4 {
@@ -397,6 +397,21 @@ input[type=submit]:hover {
         line-height: 3rem;
     }
 
+    .iframe-container {
+        position: relative;
+        width: 100%;
+        padding-bottom: 56.25%;
+        height: 0;
+    }
+
+    .iframe-container iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+
     aside {
         display: none;
     }
@@ -603,6 +618,7 @@ input[type=submit]:hover {
     #m-grid h1 {
         font-size: 4rem;
     }
+
     #m-grid p {
         font-size: 1.6rem;
     }
@@ -808,6 +824,11 @@ input[type=submit]:hover {
     #m-o {
         grid-area: o;
         text-align: center;
+        padding: 0 15rem;
+    }
+
+    #m-o h3{
+        line-height: 3.5rem;
     }
 
     #m-p {
@@ -819,8 +840,8 @@ input[type=submit]:hover {
     }
 
     main h1 {
-    font-size: 6rem;
-}
+        font-size: 6rem;
+    }
 
 }
 
