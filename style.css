@@ -212,6 +212,155 @@ header h1 {
 
 /* MAIN GRID BEGIN */
 
+<<<<<<< HEAD
+=======
+main h1 {
+    font-size: 6rem;
+}
+
+#m-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(8, 100vh);
+    gap: 4vmin;
+    position: relative;
+    margin: 10rem;
+    grid-template-areas:
+        "a a b b"
+        "c c c c"
+        "d d e e"
+        "f g g h"
+        "i i j j"
+        "k k l l"
+        "m m n n"
+        "o o o o"
+        "p p p p"
+        "q q q q";
+}
+
+#m-grid img {
+    align-self: center;
+    justify-self: center;
+    max-height: 100%;
+    max-width: 100%;
+}
+
+#m-grid section p {
+    font-size: 3vmin;
+    font-weight: bold;
+}
+
+aside {
+    padding-top: 10%;
+}
+
+#m-grid img.patch {
+    max-height: 80%;
+    max-width: 80%;
+    display: block;
+    margin: auto;
+}
+
+#m-grid img.paddingbot {
+    padding-bottom: 4rem;
+}
+
+aside p,
+aside h3 {
+    color: white;
+}
+
+#m-a {
+    grid-area: a;
+}
+
+#m-b {
+    grid-area: b;
+}
+
+#m-c {
+    grid-area: c;
+    text-align: center;
+}
+
+#m-d {
+    grid-area: d;
+}
+
+#m-e {
+    grid-area: e;
+    text-align: right;
+}
+
+#m-f {
+    grid-area: f;
+    margin-top: 60%;
+}
+
+#m-g {
+    grid-area: g;
+    text-align: center;
+    display: block;
+    margin: auto;
+}
+
+#m-h {
+    grid-area: h;
+    margin-bottom: 60%
+}
+
+#m-i {
+    grid-area: i;
+}
+
+img#m-i.patch {
+    max-width: 50%;
+    max-width: 50%;
+}
+
+#m-j {
+    grid-area: j;
+    text-align: right;
+}
+
+#m-k {
+    grid-area: k;
+    display: block;
+    margin: auto;
+}
+
+#m-l {
+    grid-area: l;
+}
+
+#m-m {
+    grid-area: m;
+}
+
+#m-n {
+    grid-area: n;
+    text-align: right;
+    display: block;
+    margin: auto;
+}
+
+#m-o {
+    grid-area: o;
+    text-align: center;
+    /* display: block; */
+    /* margin: auto; */
+    /* padding: 10%; */
+}
+
+#m-p {
+    grid-area: p;
+}
+
+#m-q {
+    grid-area: q;
+}
+
+>>>>>>> origin/master
 /* MAIN GRID END */
 
 /* FOOTER BEGIN */
