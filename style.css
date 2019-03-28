@@ -212,152 +212,6 @@ header h1 {
 
 /* MAIN GRID BEGIN */
 
-main h1 {
-    font-size: 6rem;
-}
-
-#m-grid {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(8, 100vh);
-    gap: 4vmin;
-    position: relative;
-    margin: 10rem;
-    grid-template-areas:
-        "a a b b"
-        "c c c c"
-        "d d e e"
-        "f g g h"
-        "i i j j"
-        "k k l l"
-        "m m n n"
-        "o o o o"
-        "p p p p"
-        "q q q q";
-}
-
-#m-grid img {
-    align-self: center;
-    justify-self: center;
-    max-height: 100%;
-    max-width: 100%;
-}
-
-#m-grid section p {
-    font-size: 3vmin;
-    font-weight: bold;
-}
-
-aside {
-    padding-top: 10%;
-}
-
-#m-grid img.patch {
-    max-height: 80%;
-    max-width: 80%;
-    display: block;
-    margin: auto;
-}
-
-#m-grid img.paddingbot {
-    padding-bottom: 4rem;
-}
-
-aside p,
-aside h3 {
-    color: white;
-}
-
-#m-a {
-    grid-area: a;
-}
-
-#m-b {
-    grid-area: b;
-}
-
-#m-c {
-    grid-area: c;
-    text-align: center;
-}
-
-#m-d {
-    grid-area: d;
-}
-
-#m-e {
-    grid-area: e;
-    text-align: right;
-}
-
-#m-f {
-    grid-area: f;
-    margin-top: 60%;
-}
-
-#m-g {
-    grid-area: g;
-    text-align: center;
-    display: block;
-    margin: auto;
-}
-
-#m-h {
-    grid-area: h;
-    margin-bottom: 60%
-}
-
-#m-i {
-    grid-area: i;
-}
-
-img#m-i.patch {
-    max-width: 50%;
-    max-width: 50%;
-}
-
-#m-j {
-    grid-area: j;
-    text-align: right;
-}
-
-#m-k {
-    grid-area: k;
-    display: block;
-    margin: auto;
-}
-
-#m-l {
-    grid-area: l;
-}
-
-#m-m {
-    grid-area: m;
-}
-
-#m-n {
-    grid-area: n;
-    text-align: right;
-    display: block;
-    margin: auto;
-}
-
-#m-o {
-    grid-area: o;
-    text-align: center;
-    /* display: block; */
-    /* margin: auto; */
-    /* padding: 10%; */
-}
-
-<<<<<<< HEAD #m-p {
-    grid-area: p;
-}
-
-#m-q {
-    grid-area: q;
-}
-
 /* MAIN GRID END */
 
 /* FOOTER BEGIN */
@@ -497,6 +351,62 @@ input[type=submit]:hover {
 
     /* 1100vw Intro end */
 
+    /* 1100vw Main start */
+
+    #m-grid {
+        display: block;
+        padding: 0 8rem;
+        text-align: center;
+    }
+
+    #m-grid h1 {
+        font-size: 7rem;
+    }
+
+    #m-grid p {
+        font-size: 3rem;
+    }
+
+    #m-grid section {
+        display: block;
+        width: 100%;
+    }
+
+    #m-grid #m-b {
+        margin-bottom: 6rem;
+    }
+
+    #m-grid #m-f,
+    #m-grid #m-h {
+        display: inline-block;
+        width: 40vw;
+    }
+
+    #m-grid img {
+        display: block;
+        width: 50vw;
+        margin: 0 auto;
+    }
+
+    #m-o h1 {
+        font-size: 4rem;
+    }
+
+    #m-o h3 {
+        font-size: 2.5rem;
+        line-height: 3rem;
+    }
+
+    #m-o video {
+        width: 100%;
+    }
+
+    aside {
+        display: none;
+    }
+
+    /* 1100vw Main end */
+
     /* 1100vw Footer start */
 
     .footer-header {
@@ -566,6 +476,32 @@ input[type=submit]:hover {
     }
 
     /* 800vw Intro end */
+
+    /* 800vw Main start */
+    #m-grid p {
+        font-size: 2.5rem;
+    }
+
+    #m-grid #m-b {
+        margin-bottom: 4rem;
+    }
+
+    #m-grid #m-f,
+    #m-grid #m-h {
+        width: 35vw;
+    }
+
+    #m-o h1 {
+        font-size: 3rem;
+    }
+
+    #m-o h3 {
+        font-size: 2rem;
+        line-height: 2.5rem;
+    }
+
+    /* 800vw Main end */
+
     /* 800vw Footer start */
 
     .footer-header {
@@ -602,7 +538,7 @@ input[type=submit]:hover {
 
     #logo {
         margin: 1rem 0 0 1rem;
-        height: 3.5vh;
+        height: 30px;
     }
 
     .h-grid {
@@ -636,18 +572,18 @@ input[type=submit]:hover {
     /* 600vw Intro start */
 
     #introleft {
-    padding: 2rem;
-}
+        padding: 2rem;
+    }
 
     #introleft p {
-        font-size: 1.5rem;
+        font-size: 1.6rem;
         line-height: 3rem;
         text-align: center;
     }
 
     #introright {
-    padding: 2rem;
-}
+        padding: 2rem;
+    }
 
     #introright h3 {
         font-size: 1.5rem;
@@ -661,6 +597,39 @@ input[type=submit]:hover {
     }
 
     /* 600vw Intro end */
+
+    /* 600vw Main start */
+
+    #m-grid {
+        padding: 0 2rem;
+    }
+
+    #m-grid h1 {
+        font-size: 4rem;
+    }
+    #m-grid p {
+        font-size: 1.6rem;
+    }
+
+    #m-grid #m-b {
+        margin-bottom: 4rem;
+    }
+
+    #m-grid #m-f,
+    #m-grid #m-h {
+        width: 35vw;
+    }
+
+    #m-o h1 {
+        font-size: 2rem;
+    }
+
+    #m-o h3 {
+        font-size: 1.6rem;
+        line-height: 2rem;
+    }
+
+    /* 600vw Main end */
 
     /* 600vw Footer start */
 
@@ -700,17 +669,163 @@ input[type=submit]:hover {
     }
 
     .footer-sm img {
-    width: auto;
-    height: 30px;
+        width: auto;
+        height: 30px;
         margin-top: 20px;
-    padding-left: 30px;
-    padding-right: 30px;
-}
+        padding-left: 30px;
+        padding-right: 30px;
+    }
 
     /* 600vw Footer end */
-
-
 }
+
+@media only screen and (min-width: 1100px) {
+    main h1 {
+        font-size: 6rem;
+    }
+
+    #m-grid {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(8, 1fr);
+        grid-gap: 4vmin;
+        position: relative;
+        margin: 10rem;
+        grid-template-areas:
+            "a a b b"
+            "c c c c"
+            "d d e e"
+            "f g g h"
+            "i i j j"
+            "k k l l"
+            "m m n n"
+            "o o o o";
+    }
+
+    #m-grid img {
+        align-self: center;
+        justify-self: center;
+        max-height: 100%;
+        max-width: 100%;
+    }
+
+    #m-grid section p {
+        font-size: 2.5rem;
+        font-weight: bold;
+        line-height: 4rem;
+    }
+
+    aside {
+        padding-top: 10%;
+    }
+
+    #m-grid img.patch {
+        max-height: 80%;
+        max-width: 80%;
+        display: block;
+        margin: auto;
+    }
+
+    #m-grid img.paddingbot {
+        padding-bottom: 4rem;
+    }
+
+    aside p,
+    aside h3 {
+        color: white;
+    }
+
+    #m-a {
+        grid-area: a;
+    }
+
+    #m-b {
+        grid-area: b;
+    }
+
+    #m-c {
+        grid-area: c;
+        text-align: center;
+    }
+
+    #m-d {
+        grid-area: d;
+    }
+
+    #m-e {
+        grid-area: e;
+        text-align: right;
+    }
+
+    #m-f {
+        grid-area: f;
+        margin-top: 60%;
+    }
+
+    #m-g {
+        grid-area: g;
+        text-align: center;
+        display: block;
+        margin: auto;
+    }
+
+    #m-h {
+        grid-area: h;
+        margin-bottom: 60%
+    }
+
+    #m-i {
+        grid-area: i;
+    }
+
+    img#m-i.patch {
+        max-width: 50%;
+        max-width: 50%;
+    }
+
+    #m-j {
+        grid-area: j;
+        text-align: right;
+    }
+
+    #m-k {
+        grid-area: k;
+        display: block;
+        margin: auto;
+    }
+
+    #m-l {
+        grid-area: l;
+    }
+
+    #m-m {
+        grid-area: m;
+    }
+
+    #m-n {
+        grid-area: n;
+        text-align: right;
+        display: block;
+        margin: auto;
+    }
+
+    #m-o {
+        grid-area: o;
+        text-align: center;
+        /* display: block; */
+        /* margin: auto; */
+        /* padding: 10%; */
+    }
+
+    #m-p {
+        grid-area: p;
+    }
+
+    #m-q {
+        grid-area: q;
+    }
+}
+
 
 @media screen and (max-width: 319px) {
     :root {
