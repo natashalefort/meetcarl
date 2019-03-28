@@ -416,6 +416,10 @@ input[type=submit]:hover {
         display: none;
     }
 
+    #m-grid .line {
+        display: none;
+    }
+
     /* 1100vw Main end */
 
     /* 1100vw Footer start */
@@ -699,18 +703,25 @@ input[type=submit]:hover {
     #m-grid {
         display: grid;
         grid-template-columns: repeat(4, 1fr);
-        grid-template-rows: repeat(8, 1fr);
-        grid-gap: 4vmin;
+        grid-template-rows: 250px, 1fr, 250px, 1fr, 250px, 1fr, 250px, 1fr, 250px, 1fr, 250px, 1fr, 250px, 1fr;
         position: relative;
-        margin: 10rem;
+        margin: 2rem 10rem;
         grid-template-areas:
+            "l2 l2 l2 l2"
             "a a b b"
+            "l3 l3 l3 l3"
             "c c c c"
+            "l4 l4 l4 l4"
             "d d e e"
+            "l5 l5 l5 l5"
             "f g g h"
+            "l6 l6 l6 l6"
             "i i j j"
+            "l7 l7 l7 l7"
             "k k l l"
+            "l8 l8 l8 l8"
             "m m n n"
+            "l9 l9 l9 l9"
             "o o o o";
     }
 
@@ -747,6 +758,47 @@ input[type=submit]:hover {
         color: white;
     }
 
+    #line-2 {
+        display: block;
+        grid-area: l2;
+    }
+
+    #line-3 {
+        display: block;
+        grid-area: l3;
+    }
+
+    #line-4 {
+        display: block;
+        grid-area: l4;
+    }
+
+    #line-5 {
+        display: block;
+        grid-area: l5;
+    }
+
+    #line-6 {
+        display: block;
+        grid-area: l6;
+    }
+
+    #line-7 {
+        display: block;
+        grid-area: l7;
+    }
+
+    #line-8 {
+        display: block;
+        grid-area: l8;
+    }
+
+    #line-9 {
+        display: block;
+        grid-area: l9;
+    }
+
+
     #m-a {
         grid-area: a;
     }
@@ -758,6 +810,7 @@ input[type=submit]:hover {
     #m-c {
         grid-area: c;
         text-align: center;
+        height: 100vh;
     }
 
     #m-d {
