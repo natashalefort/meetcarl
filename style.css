@@ -397,10 +397,6 @@ input[type=submit]:hover {
         line-height: 3rem;
     }
 
-    #m-o video {
-        width: 100%;
-    }
-
     aside {
         display: none;
     }
